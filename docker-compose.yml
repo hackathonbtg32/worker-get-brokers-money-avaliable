@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  taurus-queue:
+    build: ./docker/dev
+    container_name: taurus-queue
+    depends_on:
+      - taurus-redis
+    volumes:
+      - ./:/usr/src
+    command: node queue.js brokers-money-avaliable 1
+
+  taurus-redis:
+    container_name: taurus-redis
+    image: redis:latest
+    sysctls:
+      net.core.somaxconn: 1024
+    ports:
+      - 6379:6379
