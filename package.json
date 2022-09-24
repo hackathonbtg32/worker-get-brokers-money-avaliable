@@ -10,6 +10,7 @@
   ],
   "main": "queue.js",
   "dependencies": {
+    "axios": "^0.27.2",
     "bull": "^4.8.5",
     "dotenv": "^16.0.0",
     "ulid": "^2.3.0"
