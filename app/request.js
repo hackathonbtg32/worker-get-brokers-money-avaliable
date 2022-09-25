@@ -23,6 +23,20 @@ class Request {
   ) {
     return this.axios.post(endPoint, body)
   }
+
+  async put(
+    endPoint,
+    body
+  ) {
+    return this.axios.put(endPoint, body)
+  }
+
+  async patch(
+    endPoint,
+    body
+  ) {
+    return this.axios.patch(endPoint, body)
+  }
 }
 
 module.exports = Request;
