@@ -35,6 +35,7 @@ class Request {
     endPoint,
     body
   ) {
+    console.log(endPoint)
     return this.axios.patch(endPoint, body)
   }
 }
