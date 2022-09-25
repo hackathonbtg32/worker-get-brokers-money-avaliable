@@ -73,7 +73,7 @@ class TestBusiness extends BaseBusiness {
 
       paymentPayload = JSON.stringify(paymentPayload);
       const payload = {
-        paymentPayload,
+        paymentData: paymentPayload,
         status: 1,
       }
 
