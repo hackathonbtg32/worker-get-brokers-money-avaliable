@@ -78,7 +78,7 @@ class TestBusiness extends BaseBusiness {
         status: 1,
       }
 
-      req.put(`/debits/uptade/${nextDebitsToPay.data.id}`, payload)
+      req.patch(`/debits/uptade/${nextDebitsToPay.data.id}`, payload)
     } catch (error) {
       return this.sendToFallback({
         job,
