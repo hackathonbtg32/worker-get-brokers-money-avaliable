@@ -23,6 +23,8 @@ class TestBusiness extends BaseBusiness {
  
       const avaliableaccountvalueBrokers = await req.get(`/brokers/avaliablevalue/${clientId}`, {})
       const nextDebitsToPay = await req.get(`/debits/nextdebittopay/${clientId}`, {})
+      console.log(clientId)
+      console.log(nextDebitsToPay.data)
 
       let avaliableValues = 0;
 
