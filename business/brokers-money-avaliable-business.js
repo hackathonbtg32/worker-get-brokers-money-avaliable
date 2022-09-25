@@ -33,13 +33,12 @@ class TestBusiness extends BaseBusiness {
 
       const debitValue = nextDebitsToPay.data.data.paymentValue
 
-      console.log(avaliableValues)
       if (avaliableValues < debitValue) {
+        console.log('Não há saldo o suficiente para pagar os boleto')
         return
       }
 
       let remainValue = debitValue
-      console.log('PaymentValue' + debitValue)
       for (let position in clientBrokers) {
         const brokerAmmountValue = this.getValueFromBroker(
           clientBrokers[position]
@@ -79,10 +78,7 @@ class TestBusiness extends BaseBusiness {
         status: 1,
       }
 
-      // const updatedPayment = req.put(`/debits/${nextDebitsToPay.data.id}`, payload)
-      console.log(clientBrokers)
-      console.log('-------------------------------')
-      console.log(payload)
+      req.put(`/debits/uptade/${nextDebitsToPay.data.id}`, payload)
     } catch (error) {
       return this.sendToFallback({
         job,

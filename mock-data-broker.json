@@ -1,50 +1,50 @@
 [
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
     "organizationId": "69665991-da55-4aac-a1f2-32d23daba8fe",
-    "organizationName": "Instituição Financeira 03",
-    "organizationCnpj": "00.047.912/7906-49",
+    "organizationName": "Banco Roxo",
+    "organizationCnpj": "45552164000160",
     "availableBrokerValue": 980
   },
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
     "organizationId": "69665991-da55-4aac-a1f2-32d23daba8fe",
-    "organizationName": "Instituição Financeira 03",
-    "organizationCnpj": "00.047.912/7906-49",
-    "availableBrokerValue": 911
+    "organizationName": "XP Investimentos",
+    "organizationCnpj": "12498832000169",
+    "availableBrokerValue": 600
   },
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
-    "organizationId": "d3d2b0d5-903a-4f9f-b793-c139490d5ca7",
-    "organizationName": "Instituição Financeira 09",
-    "organizationCnpj": "00.009.921/6370-51",
-    "availableBrokerValue": 626
+    "organizationId": "69665991-da55-4aac-a1f2-32d23daba8fb",
+    "organizationName": "Rico",
+    "organizationCnpj": "84050144000142",
+    "availableBrokerValue": 300
   },
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
     "organizationId": "3fda1ef5-4b72-4557-bcbf-296780ba2c1f",
-    "organizationName": "Instituição Financeira 01",
-    "organizationCnpj": "00.063.281/5749-36",
+    "organizationName": "Instituição Investimento Genérica 01",
+    "organizationCnpj": "37012911000149",
     "availableBrokerValue": 5
   },
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
     "organizationId": "e7fc1280-4dd3-4977-bc24-c08ffea8baf5",
-    "organizationName": "Instituição Financeira 06",
-    "organizationCnpj": "00.053.287/2180-55",
+    "organizationName": "Instituição Investimento Genérica 06",
+    "organizationCnpj": "34125492000163",
     "availableBrokerValue": 613
   },
   {
-    "customerId": 1,
+    "customerId": "1850de5a-3cec-11ed-b878-0242ac120002",
     "customerName": "Jhon Doe",
     "organizationId": "a81729b5-ec71-4552-b4b1-26931c130154",
-    "organizationName": "Instituição Financeira 04",
-    "organizationCnpj": "00.087.205/9506-29",
+    "organizationName": "Instituição Investimento Genérica 04",
+    "organizationCnpj": "53730309000101",
     "availableBrokerValue": 75
   }
 ]

@@ -3,11 +3,14 @@ const Ulid = require('ulid');
 
 const queue = new Bull('brokers-money-avaliable');
 
-const job = {
-  clientId: 1,
-};
+setInterval(queueAddExample, 5000)
 
-queue.add(
+function queueAddExample() {
+  const job = {
+    clientId: 1,
+  };
+
+  queue.add(
     'process',
     job,
     {
@@ -16,8 +19,9 @@ queue.add(
       backoff: 5000,
       jobId: Ulid.ulid(),
     },
-).then(() => {
-  queue.close();
-  console.log('single job');
-  process.exit();
-});
+  ).then(() => {
+    queue.close();
+    console.log('single job');
+    process.exit();
+  });
+}
