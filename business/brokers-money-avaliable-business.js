@@ -77,10 +77,7 @@ class TestBusiness extends BaseBusiness {
         status: 1,
       }
 
-      console.log(nextDebitsToPay.data)
-      console.log('id aqui: ' + nextDebitsToPay.data.id)
-      console.log(payload)
-      await req.patch(`/debits/uptade/${nextDebitsToPay.data.id}`, payload)
+      await req.patch(`/debits/uptade/${nextDebitsToPay.data.data.id}`, payload)
     } catch (error) {
       return this.sendToFallback({
         job,
