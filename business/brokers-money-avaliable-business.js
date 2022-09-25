@@ -23,8 +23,6 @@ class TestBusiness extends BaseBusiness {
  
       const avaliableaccountvalueBrokers = await req.get(`/brokers/avaliablevalue/${clientId}`, {})
       const nextDebitsToPay = await req.get(`/debits/nextdebittopay/${clientId}`, {})
-      console.log(clientId)
-      console.log(nextDebitsToPay.data)
 
       let avaliableValues = 0;
 
@@ -56,7 +54,6 @@ class TestBusiness extends BaseBusiness {
           break
         }
 
-        console.log(brokerAmmountValue - remainValue)
         if ((brokerAmmountValue - remainValue) < 0) {
           remainValue = remainValue - brokerAmmountValue
 
@@ -80,7 +77,8 @@ class TestBusiness extends BaseBusiness {
         status: 1,
       }
 
-      console.log(nextDebitsToPay.data.id)
+      console.log(nextDebitsToPay.data)
+      console.log('id aqui: ' + nextDebitsToPay.data.id)
       console.log(payload)
       await req.patch(`/debits/uptade/${nextDebitsToPay.data.id}`, payload)
     } catch (error) {
