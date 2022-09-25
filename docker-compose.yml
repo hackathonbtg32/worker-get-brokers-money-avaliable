@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   taurus-queue:
-    build: ./docker/prod
+    build: ./docker/dev
     container_name: taurus-queue
     depends_on:
       - taurus-redis
